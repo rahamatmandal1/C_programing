@@ -7,7 +7,6 @@ DIV : F */
 int main() {
     float physics, chemistry, maths, average;
 
-    // Input PCM marks
     printf("Enter Physics marks: ");
     scanf("%f", &physics);
 
@@ -17,13 +16,10 @@ int main() {
     printf("Enter Maths marks: ");
     scanf("%f", &maths);
 
-    // Calculate average
-    average = (physics + chemistry + maths) / 3;
-
-    // Display average
+    average = (physics + chemistry + maths) / 3
+        
     printf("\nAverage Marks in PCM = %.2f\n", average);
 
-    // Check eligibility using conditional operator
     (average >= 50) 
         ? printf("Status: Eligible for Admission\n") 
         : printf("Status: Not Eligible for Admission\n");
